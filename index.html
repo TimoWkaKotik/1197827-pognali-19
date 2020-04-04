@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>"Погнали?"</title>
+    <title>Погнали?</title>
   </head>
   <body>
     <header class="page-header">
@@ -20,7 +20,7 @@
       <ul class="page-navigation__list-user list-user">
         <li class="list-user__item"><a class="list-user__link" href="tel:88005558628">8 800 555-86-28</a></li>
         <li class="list-user__item"><a class="list-user__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-        <li class="list-user__item"><a class="list-user__link list-user__link--button-authorization button-authorization" href="#">Авторизация</a></li>
+        <li class="list-user__item"><a class="list-user__link list-user__link--button-authorization" href="#">Авторизация</a></li>
       </ul>
       <ul class="page-navigation__list-social-media list-social-media">
         <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">FaceBook</span></a></li>
@@ -34,7 +34,7 @@
         <ul class="intro__list-menu list-menu">
           <li class="list-menu__item"><a class="list-menu__link" href="tel:88005558628"><span class="visually-hidden">Позвонить</span></a></li>
           <li class="list-menu__item"><a class="list-menu__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">Написать на электронную почту</span></a></li>
-          <li class="list-menu__item"><a class="list-menu__link list-menu__link--button-authorization button-authorization" href="https://htmlacademy.ru">Авторизация</a></li>
+          <li class="list-menu__item"><a class="list-menu__link list-menu__link--button-authorization" href="https://htmlacademy.ru">Авторизация</a></li>
         </ul>
          <blockquote class="intro__quote quote">
           <p class="quote__text">«Лучшее приложение, что я видел в жизни!»</p>
@@ -65,6 +65,7 @@
           <li class="list-countries__item">
             <img class="list-countries__img" src="img/countries/" width="270" height="110" alt="Фотография Таиланда">
             <div class="list-countries__wrapper">
+              <img class="list-countries__flag-img" src="img/flags/" width="35" height="24" alt="Флаг страны Таиланд">
               <h3 class="list-countries__name">Таиланд</h3>
               <span class="list-countries__number">18321</span>
               <p class="list-countries__slogan">Джунгли зовут!</p>
@@ -74,6 +75,7 @@
             <img class="list-countries__img" src="img/countries/" width="270" height="110" alt="Фотография Франции">
             <div class="list-countries__wrapper">
               <h3 class="list-countries__name">Франция</h3>
+              <img class="list-countries__flag-img" src="img/flags/" width="35" height="24" alt="Флаг страны Франции">
               <span class="list-countries__number">12518</span>
               <p class="list-countries__slogan">Трэ бьен, манифик!</p>
             </div>
@@ -82,6 +84,7 @@
             <img class="list-countries__img" src="img/countries/" width="270" height="110" alt="Фотография Чехии">
             <div class="list-countries__wrapper">
               <h3 class="list-countries__name">Чехия</h3>
+              <img class="list-countries__flag-img" src="img/flags/" width="35" height="24" alt="Флаг страны Чехии">
               <span class="list-countries__number">5326</span>
               <p class="list-countries__slogan">Закоулки старой Европы</p>
             </div>
@@ -103,8 +106,13 @@
               <span class="skill__level"><b>99</b></span>
               <span class="skill__text">level</span>
             </div>
-            <img class="list-persons__img" src="img/persons/" width="270" height="270" alt="Фотография попутчика Тани Фирсовой">
-            <h3 class="list-persons__name">Таня Фирсова</h3>
+            <a class="list-persons__img-link" href="https://htmlacademy.ru">
+              <img class="list-persons__img" src="img/persons/" width="270" height="270" alt="Фотография попутчика Тани Фирсовой">
+            </a>
+            <div class="list-persons__status-wrapper">
+              <p class="list-persons__status list-persons__status--off"><span class="visually-hidden">Не в сети</span></p>
+              <h3 class="list-persons__name"><a class="list-persons__name-link" href="https://htmlacademy.ru">Таня Фирсова</a></h3>
+            </div>
             <ul class="list-persons__list-tags list-tags">
                 <li class="list-tags__item">#ЗОЖ</li>
                 <li class="list-tags__item">#ПП</li>
@@ -114,10 +122,10 @@
                 <li class="list-tags__item">#смузи</li>
               </ul>
               <ul class="list-persons__list-transport list-transport">
-                <li class="list-transport__item"><span class="visually-hidden">Автотранспорт</span></li>
-                <li class="list-transport__item"><span class="visually-hidden">Авиаперелет</span></li>
-                <li class="list-transport__item"><span class="visually-hidden">Велосипед</span></li>
-                <li class="list-transport__item"><span class="visually-hidden">Пешком</span></li>
+                <li class="list-transport__item"><!-- svg --><span class="visually-hidden">Авиаперелет</span></li>
+                <li class="list-transport__item"><!-- svg --><span class="visually-hidden">Не автотранспорт</span></li>
+                <li class="list-transport__item"><!-- svg --><span class="visually-hidden">Не велосипед</span></li>
+                <li class="list-transport__item"><!-- svg --><span class="visually-hidden">Не пешком</span></li>
             </ul>
           </li>
           <li class="list-persons__item">
@@ -125,8 +133,13 @@
               <span class="skill__level"><b>80</b></span>
               <span class="skill__text">level</span>
             </div>
-            <img class="list-persons__img" src="img/persons/" width="270" height="270" alt="Фотография попутчика Пети Демина">
-            <h3 class="list-persons__name">Петя Демин</h3>
+            <a class="list-persons__img-link" href="https://htmlacademy.ru">
+              <img class="list-persons__img" src="img/persons/" width="270" height="270" alt="Фотография попутчика Пети Демина">
+            </a>
+            <div class="list-persons__status-wrapper">
+              <p class="list-persons__status list-persons__status--on"><span class="visually-hidden">В сети</span></p>
+              <h3 class="list-persons__name"><a class="list-persons__name-link" href="https://htmlacademy.ru">Петя Демин</a></h3>
+            </div>
             <ul class="list-persons__list-tags list-tags">
               <li class="list-tags__item">#бургер</li>
               <li class="list-tags__item">#бар</li>
@@ -137,7 +150,7 @@
             <ul class="list-persons__list-transport list-transport">
               <li class="list-transport__item"><span class="visually-hidden">Автотранспорт</span></li>
               <li class="list-transport__item"><span class="visually-hidden">Авиаперелет</span></li>
-              <li class="list-transport__item"><span class="visually-hidden">Велосипед</span></li>
+              <li class="list-transport__item"><span class="visually-hidden">Не велосипед</span></li>
               <li class="list-transport__item"><span class="visually-hidden">Пешком</span></li>
             </ul>
           </li>

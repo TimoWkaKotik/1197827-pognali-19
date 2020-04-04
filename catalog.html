@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Каталог "Погнали?"</title>
+    <title>Каталог Погнали?</title>
   </head>
   <body>
     <header class="page-header">
@@ -10,17 +10,17 @@
         <a class="page-navigation__logo logo" href="index.html">
           <img class="logo__img" src="img/logo-blue.png" width="100" height="15" alt="Логотип компании 'Погнали'">
         </a>
-        <button class="page-navigation__button-close button" type="button"><span class="visually-hidden">Показать меню</span></button>
+        <button class="page-navigation__button-close" type="button"><span class="visually-hidden">Показать меню</span></button>
         <ul class="page-navigation__list-site list-site">
           <li class="list-site__item"><a class="list-site__link" href="#">О сервисе</a></li>
           <li class="list-site__item"><a class="list-site__link" href="#">Направления</a></li>
-          <!-- <li class="list-site__item"><a class="list-site__link" href="#">Попутчики</a></li> -->
+          <li class="list-site__item"><a class="list-site__link" href="#">Попутчики</a></li>
         </ul>
       </nav>
       <ul class="page-navigation__list-user list-user">
         <li class="list-user__item"><a class="list-user__link" href="tel:88005558628">8 800 555-86-28</a></li>
         <li class="list-user__item"><a class="list-user__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-        <li class="list-user__item"><a class="list-user__link list-user__link--button-authorization button-authorization" href="#">Авторизация</a></li>
+        <li class="list-user__item"><a class="list-user__link list-user__link--button-authorization" href="#">Авторизация</a></li>
       </ul>
       <ul class="page-navigation__list-social-media list-social-media">
         <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">FaceBook</span></a></li>
@@ -47,94 +47,119 @@
           </fieldset>
           <fieldset class="form-country__letter letter">
             <legend class="visually-hidden">Первая буква страны</legend>
-
-            <label class="letter__label button" for="a">A</label>
-            <input class="visually-hidden" type="radio" id="a" value="letter-a" checked>
-
-            <label class="letter__label button" for="b">Б</label>
-            <input class="visually-hidden" type="radio" id="b" value="letter-b">
-
-            <label class="letter__label button" for="v">В</label>
-            <input class="visually-hidden" type="radio" id="v" value="letter-v">
-
-            <label class="letter__label button" for="g">Г</label>
-            <input class="visually-hidden" type="radio" id="g" value="letter-g">
-
-            <label class="letter__label button" for="d">Д</label>
-            <input class="visually-hidden" type="radio" id="d" value="letter-d">
-
-            <label class="letter__label button" for="e">Е</label>
-            <input class="visually-hidden" type="radio" id="e" value="letter-e">
-
-            <label class="letter__label button" for="z">З</label>
-            <input class="visually-hidden" type="radio" id="z" value="letter-z">
-
-            <label class="letter__label button" for="i">И</label>
-            <input class="visually-hidden" type="radio" id="i" value="letter-i">
-
-            <label class="letter__label button" for="k">К</label>
-            <input class="visually-hidden" type="radio" id="k" value="letter-k">
-
-            <label class="letter__label button" for="l">Л</label>
-            <input class="visually-hidden" type="radio" id="l" value="letter-l">
-
-            <label class="letter__label button" for="m">М</label>
-            <input class="visually-hidden" type="radio" id="m" value="letter-m">
-
-            <label class="letter__label button" for="n">Н</label>
-            <input class="visually-hidden" type="radio" id="n" value="letter-n">
-
-            <label class="letter__label button" for="o">О</label>
-            <input class="visually-hidden" type="radio" id="o" value="letter-o">
-
-            <label class="letter__label button" for="p">П</label>
-            <input class="visually-hidden" type="radio" id="p" value="letter-p">
-
-            <label class="letter__label button" for="r">Р</label>
-            <input class="visually-hidden" type="radio" id="r" value="letter-r">
-
-            <label class="letter__label button" for="s">С</label>
-            <input class="visually-hidden" type="radio" id="s" value="letter-s">
-
-            <label class="letter__label button" for="t">Т</label>
-            <input class="visually-hidden" type="radio" id="t" value="letter-t">
-
-            <label class="letter__label button" for="y">У</label>
-            <input class="visually-hidden" type="radio" id="y" value="letter-y">
-
-            <label class="letter__label button" for="f">Ф</label>
-            <input class="visually-hidden" type="radio" id="f" value="letter-f">
-
-            <label class="letter__label button" for="h">Х</label>
-            <input class="visually-hidden" type="radio" id="h" value="letter-h">
-
-            <label class="letter__label button" for="ch">Ч</label>
-            <input class="visually-hidden" type="radio" id="ch" value="letter-ch">
-
-            <label class="letter__label button" for="sh">Ш</label>
-            <input class="visually-hidden" type="radio" id="sh" value="letter-sh">
-
-            <label class="letter__label button" for="uh">Э</label>
-            <input class="visually-hidden" type="radio" id="uh" value="letter-uh">
-
-            <label class="letter__label button" for="u">Ю</label>
-            <input class="visually-hidden" type="radio" id="u" value="letter-u">
-
-            <label class="letter__label button" for="ya">Я</label>
-            <input class="visually-hidden" type="radio" id="ya" value="letter-ya">
+            <div class="letter__wrapper">
+              <label class="letter__label" for="a">A</label>
+              <input class="visually-hidden" type="radio" id="a" value="letter-a" checked>
+              <ul class="country-filter__list-countrys list-country">
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Афганистан</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Албания</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Алжир</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Андорра</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Аргентина</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Армения</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Австралия</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Австрия</a></li>
+                <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Азербайджанм</a></li>
+              </ul>
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="b">Б</label>
+              <input class="visually-hidden" type="radio" id="b" value="letter-b">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="v">В</label>
+              <input class="visually-hidden" type="radio" id="v" value="letter-v">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="g">Г</label>
+              <input class="visually-hidden" type="radio" id="g" value="letter-g">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="d">Д</label>
+              <input class="visually-hidden" type="radio" id="d" value="letter-d">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="e">Е</label>
+              <input class="visually-hidden" type="radio" id="e" value="letter-e">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="z">З</label>
+              <input class="visually-hidden" type="radio" id="z" value="letter-z">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="i">И</label>
+              <input class="visually-hidden" type="radio" id="i" value="letter-i">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="k">К</label>
+              <input class="visually-hidden" type="radio" id="k" value="letter-k">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="l">Л</label>
+              <input class="visually-hidden" type="radio" id="l" value="letter-l">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="m">М</label>
+              <input class="visually-hidden" type="radio" id="m" value="letter-m">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="n">Н</label>
+              <input class="visually-hidden" type="radio" id="n" value="letter-n">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="o">О</label>
+              <input class="visually-hidden" type="radio" id="o" value="letter-o">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="p">П</label>
+              <input class="visually-hidden" type="radio" id="p" value="letter-p">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="r">Р</label>
+              <input class="visually-hidden" type="radio" id="r" value="letter-r">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="s">С</label>
+              <input class="visually-hidden" type="radio" id="s" value="letter-s">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="t">Т</label>
+              <input class="visually-hidden" type="radio" id="t" value="letter-t">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="y">У</label>
+              <input class="visually-hidden" type="radio" id="y" value="letter-y">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="f">Ф</label>
+              <input class="visually-hidden" type="radio" id="f" value="letter-f">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="h">Х</label>
+              <input class="visually-hidden" type="radio" id="h" value="letter-h">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="ch">Ч</label>
+              <input class="visually-hidden" type="radio" id="ch" value="letter-ch">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="sh">Ш</label>
+              <input class="visually-hidden" type="radio" id="sh" value="letter-sh">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="uh">Э</label>
+              <input class="visually-hidden" type="radio" id="uh" value="letter-uh">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="u">Ю</label>
+              <input class="visually-hidden" type="radio" id="u" value="letter-u">
+            </div>
+            <div class="letter__wrapper">
+              <label class="letter__label" for="ya">Я</label>
+              <input class="visually-hidden" type="radio" id="ya" value="letter-ya">
+            </div>
           </fieldset>
         </form>
-        <ul class="country-filter__list-countrys list-country">
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Афганистан</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Албания</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Алжир</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Андорра</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Аргентина</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Армения</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Австралия</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Австрия</a></li>
-          <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Азербайджанм</a></li>
-        </ul>
         <button class="country-filter__button-hide">Свернуть</button>
       </section>
       <section class="page-main__companion-filter companion-filter">
@@ -149,7 +174,7 @@
             <input class="visually-hidden" type="checkebox" id="hard-rock" name="checkbox--hard-rock" checked>
             <label class="music__label" for="hard-rock">Тяжелый рок</label>
 
-            <input class="visually-hidden" type="checkebox" id="russian-rap" name="checkbox--russian-rap" >
+            <input class="visually-hidden" type="checkebox" id="russian-rap" name="checkbox--russian-rap">
             <label class="music__label" for="russian-rap">Русский рэп</label>
 
             <input class="visually-hidden" type="checkebox" id="eurodance" name="checkbox--eurodance">
@@ -204,21 +229,24 @@
           <li class="companion__person-card person-card">
             <div class="person-card__wrapper">
               <div class="person-card__like-image">
-                <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Тани Фирсовой">
+                <a class="person-card__img-link" href="https://htmlacademy.ru">
+                  <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Тани Фирсовой">
+                </a>
                 <p class="person-card__like">
                   <!-- svg -->
                   <span class="person-card_like-number">1.5 М</span>
                 </p>
               </div>
-              <h3 class="person-card__name">Таня Фирсова</h3>
+              <h3 class="person-card__name"><a class="person-card__name-link" href="https://htmlacademy.ru">Таня Фирсова</a></h3>
+              <p class="person-card__status person-card__status--off"><span class="visually-hidden">Не в сети</span></p>
             </div>
             <ul class="person-card__list-tags list-tags">
-                <li class="list-tags__item">#ЗОЖ</li>
-                <li class="list-tags__item">#ПП</li>
-                <li class="list-tags__item">#Фитнес</li>
-                <li class="list-tags__item">#пляж</li>
-                <li class="list-tags__item">#авокадо</li>
-                <li class="list-tags__item">#смузи</li>
+              <li class="list-tags__item">#ЗОЖ</li>
+              <li class="list-tags__item">#ПП</li>
+              <li class="list-tags__item">#Фитнес</li>
+              <li class="list-tags__item">#пляж</li>
+              <li class="list-tags__item">#авокадо</li>
+              <li class="list-tags__item">#смузи</li>
             </ul>
             <span class="person-card__want-to-visit">Хочет посесить:</span>
             <ul class="person-card__list-want-country list-want-country">
@@ -256,13 +284,16 @@
           <li class="companion__person-card person-card">
             <div class="person-card__wrapper">
               <div class="person-card__like-image">
-                <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Пети Демина">
+                 <a class="person-card__img-link" href="https://htmlacademy.ru">
+                    <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Пети Демина">
+                  </a>
                 <p class="person-card__like">
                   <!-- svg -->
                   <span class="person-card_like-number">1500</span>
                 </p>
               </div>
-              <h3 class="person-card__name">Петя Демин</h3>
+              <h3 class="person-card__name"><a class="person-card__name-link" href="https://htmlacademy.ru">Петя Демин</a></h3>
+              <p class="person-card__status person-card__status--off"><span class="visually-hidden">Не в сети</span></p>
             </div>
             <ul class="person-card__list-tags list-tags">
               <li class="list-tags__item">#бургер</li>
@@ -303,13 +334,16 @@
           <li class="companion__person-card person-card">
             <div class="person-card__wrapper">
               <div class="person-card__like-image">
-                <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Марка Смолова">
+                <a class="person-card__img-link" href="https://htmlacademy.ru">
+                  <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Марка Смолова">
+                </a>
                 <p class="person-card__like">
                   <!-- svg -->
                   <span class="person-card_like-number">170</span>
                 </p>
               </div>
-              <h3 class="person-card__name">Марк Смолов</h3>
+              <h3 class="person-card__name"><a class="person-card__name-link" href="https://htmlacademy.ru">Марк Смолов</a></h3>
+              <p class="person-card__status person-card__status--off"><span class="visually-hidden">Не в сети</span></p>
             </div>
             <ul class="person-card__list-tags list-tags">
               <li class="list-tags__item">#реп</li>
@@ -354,13 +388,16 @@
           <li class="companion__person-card person-card">
             <div class="person-card__wrapper">
               <div class="person-card__like-image">
-                <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+                <a class="person-card__img-link" href="https://htmlacademy.ru">
+                  <img class="person-card__user-photo" src="img/persons/" width="70" height="70" alt="Фотография пользователя Ларисы Роговой">
+                </a>
                 <p class="person-card__like">
                   <!-- svg -->
                   <span class="person-card_like-number">23</span>
                 </p>
               </div>
-              <h3 class="person-card__name">Лариса Роговая</h3>
+              <h3 class="person-card__name"><a class="person-card__name-link" href="https://htmlacademy.ru">Лариса Роговая</a></h3>
+              <p class="person-card__status person-card__status--on"><span class="visually-hidden">В сети</span></p>
             </div>
             <ul class="person-card__list-tags list-tags">
               <li class="list-tags__item">#образование</li>
