@@ -116,8 +116,15 @@
             </div>
             <input class="visually-hidden" type="checkebox" name="checkebox--children" id="children" checked>
             <label class="first-step__label-children" for="children">Можно с детьми</label>
-            <div class="form-settings__set form-settings__calendar calendar">
+
+            <div class="form-settings__calendar calendar">
               <span class="visually-hidden">Календарь</span>
+              <div class="first-step__calendar-wrapper">
+                <label class="visually-hidden" for="mouth">Месяц</label>
+                <button class="calendar__button" type="button"><span class="visually-hidden">Предыдущий месяц</span></button>
+                <output class="calendar__output" name="total-people" id="mount">Март 2019</output>
+                <button class="calendar__button" type="button"><span class="visually-hidden">Следующий месяц</span></button>
+              </div>
               <ul class="calendar__list-day-week">
                 <li class="calendar__item">П</li>
                 <li class="calendar__item">В</li>
