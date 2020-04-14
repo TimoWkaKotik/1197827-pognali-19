@@ -1,0 +1,61 @@
+.registration {
+  color: #ffffff;
+  font-weight: 300;
+
+  padding: 0 25px;
+  padding-top: 100px;
+  padding-bottom: 29px;
+  border-radius: 0 0 30px 30px;
+  background-color: #192144;
+  position: relative;
+  z-index: 5;
+  top: -57px;
+}
+
+.registration__title {
+  color: #ff8d30;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.registration__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.registration__link {
+  color: #ffd74b;
+  text-decoration: underline;
+}
+
+.registration__link:hover,
+.registration__link:focus {
+  outline: none;
+  color: #ff8d30;
+}
+
+.registration__link:active {
+  opacity: 0.3;
+}
+
+.registration__link-contact {
+  color: #ffd74b;
+  font-weight: 700;
+  min-height: 45px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+
+
+
+
+
+
+

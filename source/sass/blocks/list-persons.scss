@@ -1,0 +1,61 @@
+.list-persons {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.list-persons__item {
+  min-height: 430px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+.list-persons__item:last-child {
+  margin: 0;
+}
+
+.list-persons__img {
+  border-radius: 10px 10px 0 0;
+}
+
+.list-persons__want-country-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: -16px;
+}
+
+.list-persons__status-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -8px;
+  margin-bottom: 18px;
+}
+
+.list-persons__status {
+  margin: 0;
+  margin-right: 11px;
+  padding: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #f97676;
+}
+
+.list-persons__status--on {
+  background-color: #81e31e;
+}
+
+.list-persons__name {
+  padding: 0;
+  margin: 0;
+}
+.list-persons__name-link {
+  color: #1d2e5b;
+  font-size: 21px;
+  font-weight: 700;
+}

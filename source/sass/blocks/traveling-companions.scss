@@ -1,29 +1,27 @@
-.about-us {
-  padding: 0;
-  padding-left: 50px;
-  padding-right: 60px;
-  padding-top: 33px;
-  min-height: 308px;
+.traveling-companions {
+  padding: 0 25px;
+  padding-top: 101px;
+  margin: 0;
+  margin-top: -28px;
+  min-height: 1229px;
   background-color: #192144;
   border-radius: 0 0 30px 30px;
   position: relative;
-  z-index: 10;
+  z-index: 7;
 }
 
-.about-us::before {
+.traveling-companions::before {
   content: '';
-  min-width: 292px;
-  min-height: 352px;
-  background-image: url('../img/about-mobile@1x.png');
-  background-repeat: no-repeat;
-  background-size: 100% 340px;
+  min-width: 143px;
+  min-height: 143px;
+  background-image: url('../img/persons/smolov-back-desktop@1x.png');
   position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 10px;
+  z-index: -2;
+  top: 70px;
+  right: 0;
 }
 
-.about-us::after {
+.traveling-companions::after {
   content: '';
   min-width: 132px;
   min-height: 132px;
@@ -31,11 +29,11 @@
   border-radius: 20px;
   position: absolute;
   z-index: -2;
-  top: 0;
+  top: 70px;
   left: -20px;
 }
 
-.about-us__title {
+.traveling-companions__title {
   color: #ff8d30;
   font-size: 24px;
   font-weight: 700;
@@ -43,9 +41,11 @@
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
+
+  position: relative;
 }
 
-.about-us__description {
+.traveling-companions__description {
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
@@ -54,6 +54,8 @@
   margin-bottom: 35px;
   padding: 0;
 }
-.about-us__description--bold {
+
+.traveling-companions__description--bold {
   font-weight: 700;
+  margin-bottom: 60px;
 }

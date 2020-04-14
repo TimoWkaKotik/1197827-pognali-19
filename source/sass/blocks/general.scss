@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Blogger Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/bloggersans.woff2') format('woff2'),
+    url('../fonts/bloggersans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Blogger Sans';
+  font-style: bold;
+  font-weight: 800;
+  src:
+    url('../fonts/bloggersans-bold.woff2') format('woff2'),
+    url('../fonts/bloggersans-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Blogger Sans';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url('../fonts/bloggersans-light.woff2') format('woff2'),
+    url('../fonts/bloggersans-light.woff') format('woff');
+}
+
+// variables
+$blogger: 'Blogger Sans', Arial, sans-serif;
+
+// general properties
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-size: 16px;
+  font-family: $blogger;
+}
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+b {
+  font-weight: inherit;
+}
+
+
