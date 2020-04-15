@@ -1,0 +1,24 @@
+.page-main__title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+
+  padding: 0 25px;
+  padding-top: 59px;
+  margin: 0;
+  background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  z-index: 10;
+}
+.page-main__title::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 5px;
+  height: 8px;
+  width: 170px;
+  min-width: 173px;
+  border-radius: 4px;
+  background-color: #ff8d30;
+}

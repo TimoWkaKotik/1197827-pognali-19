@@ -1,0 +1,37 @@
+.country-filter {
+  padding: 0 25px;
+  padding-top: 42px;
+  padding-bottom: 17px;
+  background-color: #e2e5f2;
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  top: -20px;
+}
+.country-filter__wrapper {
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 37px;
+}
+.country-filter__title {
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.country-filter__wrapper::before {
+  content: '';
+  display: flex;
+  width: 15px;
+  height: 10px;
+  background-image: url('../img/svg/filter.svg');
+  background-repeat: no-repeat;
+  margin-top: 2px;
+  margin-right: 12px;
+}
+.country-filter__button-close {
+  margin-left: auto;
+}
+
