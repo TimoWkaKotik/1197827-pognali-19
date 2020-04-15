@@ -3,20 +3,20 @@
   margin: 0;
   margin-bottom: 42px;
   padding: 0;
-  &__link {
-    color: #192144;
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-    &--button-authorization {
-      margin-bottom: 51px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-width: 270px;
-      min-height: 50px;
-      border-radius: 25px;
-      background-color: #ffd74b;
-    }
-  }
+}
+.list-user__link {
+  color: #192144;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.list-user__link--button-authorization {
+  margin-bottom: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 270px;
+  min-height: 50px;
+  border-radius: 25px;
+  background-color: #ffd74b;
 }

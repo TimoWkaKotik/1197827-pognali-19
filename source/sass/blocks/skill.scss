@@ -12,16 +12,13 @@
   top: 16px;
   left: 16px;
 }
-
 .skill__level {
   font-size: 24px;
   font-weight: 700;
 }
-
 .skill__text {
   font-weight: 300;
 }
-
 .skill__text::before {
   content: '';
   display: block;
@@ -34,12 +31,10 @@
   bottom: 2px;
   left: -2px;
 }
-
 .skill__progress-svg {
   position: absolute;
   transform: rotate(90deg);
 }
-
 .skill__progress-circle {
   fill: none;
   stroke-width: 3px;

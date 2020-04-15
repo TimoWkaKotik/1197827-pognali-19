@@ -2,55 +2,63 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог Погнали?</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__page-navigation page-navigation">
-        <a class="page-navigation__logo logo" href="index.html">
-          <img class="logo__img" src="img/logo-blue.png" width="100" height="15" alt="Логотип компании 'Погнали'">
+      <div class="page-header__control">
+        <a class="page-header__logo-link" href="index.html">
+          <img class="page-header-img" src="img/logos/logo-mobile-white@1x.png" width="100" height="15" alt="Логотип компании 'Погнали'">
         </a>
-        <button class="page-navigation__button-close" type="button"><span class="visually-hidden">Показать меню</span></button>
-        <ul class="page-navigation__list-site list-site">
-          <li class="list-site__item"><a class="list-site__link" href="#">О сервисе</a></li>
-          <li class="list-site__item"><a class="list-site__link" href="#">Направления</a></li>
-          <li class="list-site__item"><a class="list-site__link" href="#">Попутчики</a></li>
+        <button class="page-header__button-close" type="button"><span class="visually-hidden">Показать меню</span></button>
+      </div>
+      <div class="page-header__modal-menu">
+        <nav class="page-header__page-navigation page-navigation">
+          <ul class="page-navigation__list-site list-site">
+            <li class="list-site__item"><a class="list-site__link" href="https://htmlacademy.ru">О сервисе</a></li>
+            <li class="list-site__item"><a class="list-site__link" href="form.html">Направления</a></li>
+            <li class="list-site__item"><a class="list-site__link" href="catalog.html">Попутчики</a></li>
+          </ul>
+        </nav>
+        <ul class="page-navigation__list-user list-user">
+          <li class="list-user__item"><a class="list-user__link list-user__link--button-authorization" href="#">Авторизация</a></li>
+          <li class="list-user__item"><a class="list-user__link" href="tel:88005558628">8 800 555-86-28</a></li>
+          <li class="list-user__item"><a class="list-user__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
         </ul>
-      </nav>
-      <ul class="page-navigation__list-user list-user">
-        <li class="list-user__item"><a class="list-user__link" href="tel:88005558628">8 800 555-86-28</a></li>
-        <li class="list-user__item"><a class="list-user__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-        <li class="list-user__item"><a class="list-user__link list-user__link--button-authorization" href="#">Авторизация</a></li>
-      </ul>
-      <ul class="page-navigation__list-social-media list-social-media">
-        <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">FaceBook</span></a></li>
-        <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">Vkontakte</span></a></li>
-        <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">Instagram</span></a></li>
-      </ul>
+        <ul class="page-navigation__list-social-media list-social-media">
+          <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">FaceBook</span></a></li>
+          <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">Vkontakte</span></a></li>
+          <li class="list-social-media__item"><a class="list-social-media__link" href="https://htmlacademy.ru"><span class="visually-hidden">Instagram</span></a></li>
+        </ul>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Попутчики</h1>
       <section class="page-main__country-filter country-filter">
-        <h2 class="country-filter__title">Фильтрация по странам</h2>
-        <button class="country-filter__button-close" type="button"><span class="visually-hidden">Показать/Скрыть фильтрацию по странам</span></button>
+        <div class="country-filter__wrapper">
+          <h2 class="country-filter__title">Фильтрация по странам</h2>
+          <button class="country-filter__button-close" type="button"><span class="visually-hidden">Показать/Скрыть фильтрацию по странам</span></button>
+        </div>
         <form class="country-filter__form-country form-country" method="post">
           <fieldset class="form-country__continent continent">
             <legend class="visually-hidden">Континент</legend>
+            <input class="visually-hidden" type="radio" value="continent-europe" id="europe" checked name="radio-continent">
             <label class="continent__label" for="europe">Европа</label>
-            <input class="visually-hidden" type="radio" value="continent-europe" id="europe" checked>
+            <input class="visually-hidden" type="radio" value="continent-asia" id="asia" name="radio-continent">
             <label class="continent__label" for="asia">Азия</label>
-            <input class="visually-hidden" type="radio" value="continent-asia" id="asia">
+            <input class="visually-hidden" type="radio" value="continent-america" id="america" name="radio-continent">
             <label class="continent__label" for="america">Америка</label>
-            <input class="visually-hidden" type="radio" value="continent-america" id="america">
+            <input class="visually-hidden" type="radio" value="continent-islands" id="islands" name="radio-continent">
             <label class="continent__label" for="islands">Острова</label>
-            <input class="visually-hidden" type="radio" value="continent-islands" id="islands">
           </fieldset>
           <fieldset class="form-country__letter letter">
             <legend class="visually-hidden">Первая буква страны</legend>
             <div class="letter__wrapper">
-              <label class="letter__label" for="a">A</label>
               <input class="visually-hidden" type="radio" id="a" value="letter-a" checked>
-              <ul class="country-filter__list-countrys list-country">
+              <label class="letter__label" for="a">A</label>
+              <ul class="country-filter__list-countrys visually-hidden list-country">
                 <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Афганистан</a></li>
                 <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Албания</a></li>
                 <li class="list-country__item"><a class="list-country__link" href="https://htmlacademy.ru">Алжир</a></li>
@@ -63,100 +71,100 @@
               </ul>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="b">Б</label>
               <input class="visually-hidden" type="radio" id="b" value="letter-b">
+              <label class="letter__label" for="b">Б</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="v">В</label>
               <input class="visually-hidden" type="radio" id="v" value="letter-v">
+              <label class="letter__label" for="v">В</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="g">Г</label>
               <input class="visually-hidden" type="radio" id="g" value="letter-g">
+              <label class="letter__label" for="g">Г</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="d">Д</label>
               <input class="visually-hidden" type="radio" id="d" value="letter-d">
+              <label class="letter__label" for="d">Д</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="e">Е</label>
               <input class="visually-hidden" type="radio" id="e" value="letter-e">
+              <label class="letter__label" for="e">Е</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="z">З</label>
               <input class="visually-hidden" type="radio" id="z" value="letter-z">
+              <label class="letter__label" for="z">З</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="i">И</label>
               <input class="visually-hidden" type="radio" id="i" value="letter-i">
+              <label class="letter__label" for="i">И</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="k">К</label>
               <input class="visually-hidden" type="radio" id="k" value="letter-k">
+              <label class="letter__label" for="k">К</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="l">Л</label>
               <input class="visually-hidden" type="radio" id="l" value="letter-l">
+              <label class="letter__label" for="l">Л</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="m">М</label>
               <input class="visually-hidden" type="radio" id="m" value="letter-m">
+              <label class="letter__label" for="m">М</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="n">Н</label>
               <input class="visually-hidden" type="radio" id="n" value="letter-n">
+              <label class="letter__label" for="n">Н</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="o">О</label>
               <input class="visually-hidden" type="radio" id="o" value="letter-o">
+              <label class="letter__label" for="o">О</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="p">П</label>
               <input class="visually-hidden" type="radio" id="p" value="letter-p">
+              <label class="letter__label" for="p">П</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="r">Р</label>
               <input class="visually-hidden" type="radio" id="r" value="letter-r">
+              <label class="letter__label" for="r">Р</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="s">С</label>
               <input class="visually-hidden" type="radio" id="s" value="letter-s">
+              <label class="letter__label" for="s">С</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="t">Т</label>
               <input class="visually-hidden" type="radio" id="t" value="letter-t">
+              <label class="letter__label" for="t">Т</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="y">У</label>
               <input class="visually-hidden" type="radio" id="y" value="letter-y">
+              <label class="letter__label" for="y">У</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="f">Ф</label>
               <input class="visually-hidden" type="radio" id="f" value="letter-f">
+              <label class="letter__label" for="f">Ф</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="h">Х</label>
               <input class="visually-hidden" type="radio" id="h" value="letter-h">
+              <label class="letter__label" for="h">Х</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="ch">Ч</label>
               <input class="visually-hidden" type="radio" id="ch" value="letter-ch">
+              <label class="letter__label" for="ch">Ч</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="sh">Ш</label>
               <input class="visually-hidden" type="radio" id="sh" value="letter-sh">
+              <label class="letter__label" for="sh">Ш</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="uh">Э</label>
               <input class="visually-hidden" type="radio" id="uh" value="letter-uh">
+              <label class="letter__label" for="uh">Э</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="u">Ю</label>
               <input class="visually-hidden" type="radio" id="u" value="letter-u">
+              <label class="letter__label" for="u">Ю</label>
             </div>
             <div class="letter__wrapper">
-              <label class="letter__label" for="ya">Я</label>
               <input class="visually-hidden" type="radio" id="ya" value="letter-ya">
+              <label class="letter__label" for="ya">Я</label>
             </div>
           </fieldset>
         </form>

@@ -3,21 +3,17 @@
   margin: 0;
   list-style: none;
 }
-
 .list-countries__item {
   margin-bottom: 11px;
 }
-
 .list-countries__item:last-child {
   margin-bottom: 0;
 }
-
 .list-countries__img {
   border-radius: 10px 10px 0 0;
   position: relative;
   z-index: 0;
 }
-
 .list-countries__wrapper {
   margin-top: -18px;
   padding: 0 25px;
@@ -28,30 +24,25 @@
   position: relative;
   z-index: 1;
 }
-
 .list-countries__wrapper--gradient {
   background: rgb(237,239,246);
   background: -moz-linear-gradient(360deg, rgba(237,239,246,1) 50%, rgba(255,255,255,1) 100%);
   background: -webkit-linear-gradient(360deg, rgba(237,239,246,1) 50%, rgba(255,255,255,1) 100%);
   background: linear-gradient(360deg, rgba(237,239,246,1) 50%, rgba(255,255,255,1) 100%);
 }
-
 .list-countries__flag-img {
   margin-top: -12px;
   margin-bottom: 16px;
 }
-
 .list-countries__statistic {
   margin-bottom: 3px;
   display: flex;
   align-items: center;
 }
-
 .list-countries__name {
   padding: 0;
   margin: 0;
 }
-
 .list-countries__number {
   opacity: 0.3;
 
@@ -59,7 +50,6 @@
   margin: 0;
   margin-left: auto;
 }
-
 .list-countries__number::before {
   content: '';
   margin-right: 9px;
@@ -70,7 +60,6 @@
   min-width: 11px;
   min-height: 11px;
 }
-
 .list-countries__slogan {
   opacity: 0.3;
 

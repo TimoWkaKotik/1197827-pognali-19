@@ -4,7 +4,6 @@
   margin-bottom: 20px;
   list-style: none;
 }
-
 .list-persons__item {
   min-height: 430px;
   margin-bottom: 10px;
@@ -15,11 +14,9 @@
 .list-persons__item:last-child {
   margin: 0;
 }
-
 .list-persons__img {
   border-radius: 10px 10px 0 0;
 }
-
 .list-persons__want-country-wrapper {
   display: flex;
   justify-content: center;
@@ -27,7 +24,6 @@
   position: relative;
   top: -16px;
 }
-
 .list-persons__status-wrapper {
   display: flex;
   align-items: center;
@@ -35,7 +31,6 @@
   margin-top: -8px;
   margin-bottom: 18px;
 }
-
 .list-persons__status {
   margin: 0;
   margin-right: 11px;
@@ -45,11 +40,9 @@
   border-radius: 50%;
   background-color: #f97676;
 }
-
 .list-persons__status--on {
   background-color: #81e31e;
 }
-
 .list-persons__name {
   padding: 0;
   margin: 0;

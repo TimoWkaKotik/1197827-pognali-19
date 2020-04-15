@@ -1,24 +1,24 @@
 .page-header {
   background-color: #161c36;
-  &__control {
-    background-color: #161c36;
-    padding: 0 25px;
-    padding-top: 27px;
-    display: flex;
-    align-items: flex-start;
-    &--scroll {
-      background-color: #ffffff;
-    }
-  }
-  &__button-close {
-    margin: 0;
-    margin-left: auto;
-  }
-  &__modal-menu {
-    background-color: #ffffff;
-    padding: 0 25px;
-    padding-top: 75px;
-    display: none;
-  }
 }
+.page-header__control {
+  background-color: #161c36;
+  padding: 0 25px;
+  padding-top: 27px;
+  display: flex;
+  align-items: flex-start;
 
+}
+.page-header__control--scroll {
+  background-color: #ffffff;
+}
+.page-header__button-close {
+  margin: 0;
+  margin-left: auto;
+}
+.page-header__modal-menu {
+  background-color: #ffffff;
+  padding: 0 25px;
+  padding-top: 75px;
+  display: none;
+}

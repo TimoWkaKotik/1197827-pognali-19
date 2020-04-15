@@ -11,7 +11,6 @@
   z-index: 5;
   top: -57px;
 }
-
 .registration__title {
   color: #ff8d30;
   padding: 0;
@@ -21,29 +20,24 @@
   font-weight: 700;
   text-align: center;
 }
-
 .registration__description {
   padding: 0;
   margin: 0;
   margin-bottom: 32px;
   text-align: center;
 }
-
 .registration__link {
   color: #ffd74b;
   text-decoration: underline;
 }
-
 .registration__link:hover,
 .registration__link:focus {
   outline: none;
   color: #ff8d30;
 }
-
 .registration__link:active {
   opacity: 0.3;
 }
-
 .registration__link-contact {
   color: #ffd74b;
   font-weight: 700;
@@ -51,11 +45,3 @@
   text-transform: uppercase;
   display: flex;
 }
-
-
-
-
-
-
-
-
