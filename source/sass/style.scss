@@ -29,11 +29,22 @@
 @import 'blocks/page-footer';
 @import 'blocks/social-media-bottom';
 @import 'blocks/htmlacademy';
-
-// catalog.html
-@import 'blocks/catalog/page-main.scss';
-@import 'blocks/catalog/country-filter.scss';
-@import 'blocks/catalog/form-country.scss';
-@import 'blocks/catalog/continent.scss';
-@import 'blocks/catalog/letter.scss';
+//catalog.html
+@import 'blocks/country-filter.scss';
+@import 'blocks/form-country.scss';
+@import 'blocks/continent.scss';
+@import 'blocks/letter.scss';
+@import 'blocks/countries-search.scss';
+@import 'blocks/companion-filter.scss';
+@import 'blocks/form-interest.scss';
+@import 'blocks/hobbies.scss';
+@import 'blocks/music.scss';
+@import 'blocks/food.scss';
+@import 'blocks/transport.scss';
+@import 'blocks/level.scss';
+@import 'blocks/controls.scss';
+@import 'blocks/range-controls.scss';
+@import 'blocks/companion.scss';
+@import 'blocks/person-card.scss';
+@import 'blocks/list-want-country.scss';
 // form.html

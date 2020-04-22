@@ -1,0 +1,35 @@
+.letter {
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  border: none;
+}
+.letter__block-wrapper {
+  border-left: 1px solid #cbced9;
+  border-top: 1px solid #cbced9;
+  width: 225px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+.letter__label {
+  color: #444444;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  height: 42px;
+  border-right: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letter__wrapper input:checked + .letter__label {
+  background-color: #1d2e5b;
+  color: #ffffff;
+}

@@ -22,10 +22,8 @@
     url('../fonts/bloggersans-light.woff2') format('woff2'),
     url('../fonts/bloggersans-light.woff') format('woff');
 }
-
 // variables
 $blogger: 'Blogger Sans', Arial, sans-serif;
-
 // general properties
 html, body {
   margin: 0;
@@ -34,6 +32,7 @@ html, body {
   min-height: 100%;
   font-size: 16px;
   font-family: $blogger;
+  background-color: #edeff6;
 }
 body {
   margin: 0 auto;
@@ -46,5 +45,6 @@ a {
 b {
   font-weight: inherit;
 }
-
-
+address {
+  font-style: inherit;
+}

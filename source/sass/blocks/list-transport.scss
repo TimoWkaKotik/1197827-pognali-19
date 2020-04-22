@@ -6,8 +6,18 @@
   display: flex;
   justify-content: center;
 }
+.list-transport--catalog {
+  margin: 0;
+  padding-left: 25px;
+  justify-content: flex-start;
+}
 .list-transport__item {
-  margin-right: 13px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+.list-transport__item--catalog {
+  background-color: #edeff6;
 }
 .list-transport__svg {
   opacity: 0.15;
