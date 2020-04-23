@@ -1,23 +1,30 @@
 .country-filter {
-  padding: 0 25px;
   padding-top: 42px;
   padding-bottom: 17px;
   background-color: #e2e5f2;
   border-radius: 0 0 20px 20px;
+  width: 100%;
   position: relative;
   z-index: 9;
   top: -20px;
 }
 .country-filter__wrapper {
+  padding: 0 25px;
   border-radius: 0 0 20px 20px;
   display: flex;
   align-items: flex-start;
 }
-// ВЫКЛЮЧАЛКА ФИЛЬТРА СТРАН
+
 .country-filter__form-block {
-  display: none;
+  padding: 0 25px;
+  padding-bottom: 27px;
+  border-radius: 0 0 20px 20px;
+  background-color: #e2e5f2;
+  position: absolute;
+  // ВЫКЛЮЧАЛКА ФИЛЬТРА СТРАН
+  // display: none;
+  // ВЫКЛЮЧАЛКА ФИЛЬТРА СТРАН
 }
-// ВЫКЛЮЧАЛКА ФИЛЬТРА СТРАН
 .country-filter__title {
   color: #192144;
   font-size: 16px;
