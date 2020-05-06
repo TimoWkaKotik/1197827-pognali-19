@@ -10,3 +10,8 @@
   flex-direction: column;
   align-items: center;
 }
+.page-footer--form {
+  position: relative;
+  top: -71px;
+  z-index: 13;
+}

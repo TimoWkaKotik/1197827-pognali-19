@@ -12,12 +12,26 @@
   top: 16px;
   left: 16px;
 }
+.skill--form {
+  color: #444444;
+  padding-left: 25px;
+  width: auto;
+  height: auto;
+  background: transparent;
+  position: static;
+}
 .skill__level {
   font-size: 24px;
   font-weight: 700;
 }
+.skill__level--form {
+  color: #161c35;
+  font-size: 38px;
+  font-weight: 700;
+}
 .skill__text {
   font-weight: 300;
+  text-align: center;
 }
 .skill__text::before {
   content: '';
@@ -30,6 +44,13 @@
   position: relative;
   bottom: 2px;
   left: -2px;
+}
+.skill__text--form::before {
+  width: 50px;
+  height: 2px;
+  opacity: 1;
+  margin-left: 4px;
+  background-color: #cbced9;
 }
 .skill__progress-svg {
   position: absolute;

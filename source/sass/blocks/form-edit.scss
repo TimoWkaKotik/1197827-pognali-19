@@ -1,0 +1,48 @@
+.form-edit__photo-button {
+  color: #161c35;
+  font-size: 17px;
+  text-transform: uppercase;
+  min-width: 270px;
+  min-height: 40px;
+  border-radius: 20px;
+  background-color: #d6daed;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+.form-edit__photo-button::after {
+  display: none;
+}
+.form-edit__set-tags,
+.form-edit__set-transport {
+  padding: 20px 24px;
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid #cbced9;
+  background-color: #edeff6;
+}
+.form-edit__set-tags {
+  margin-bottom: 20px;
+}
+.form-edit__name {
+  text-align: center;
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 18px;
+}
+.form-edit__tags-text {
+  outline: none;
+  color: #444444;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  resize: none;
+  display: block;
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+}

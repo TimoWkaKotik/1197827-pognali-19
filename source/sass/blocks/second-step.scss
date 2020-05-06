@@ -1,0 +1,135 @@
+.second-step {
+  padding: 0 25px;
+  padding-top: 24px;
+  padding-bottom: 17px;
+  margin: 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: relative;
+}
+.second-step__country-wrapper {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.second-step__arrow-wrapper {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  min-width: 168px;
+  position: relative;
+}
+.second-step__arrow-wrapper::after {
+  content: '';
+  background-image: url('../img/svg/dropdown-form.svg');
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 7px;
+  position: absolute;
+  right: 13px;
+  top: 17px;
+  box-shadow: -1px 1px 4px 5px #ffffff;
+}
+.second-step__country {
+  outline: none;
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  border: none;
+  box-sizing: border-box;
+  padding: 12px;
+  height: 42px;
+  width: 90%;
+  background-color: transparent;
+  box-shadow: -39px 0px 4px 0px #ffffff inset;
+}
+.second-step__flag-wrapper {
+  margin-left: -1px;
+  display: flex;
+  position: relative;
+}
+.second-step__dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -4px;
+  top: 18px;
+  box-sizing: border-box;
+}
+.second-step__dot--active {
+  border: none;
+  background-color: #1d2e5b;
+}
+.second-step__flag {
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+}
+.second-step__button-close {
+  border: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #edeff6;
+  position: absolute;
+  z-index: 10;
+  right: -12px;
+  top: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-step__arrow-wrapper--select-country {
+  width: 220px;
+}
+.second-step__select-country-text {
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  padding: 13px;
+}
+.second-step__dot--select-country {
+  top: -4px;
+  left: -56px;
+}
+.second-step__country-add {
+  color: #1d2e5b;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  min-width: 220px;
+  height: 42px;
+  border-radius: 4px;
+  background-color: #edeff6;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+.second-step__country-add-text {
+  margin-right: 42px;
+}
+.second-step__dot--add-country {
+  position: static;
+  background-color: #edeff6;
+}
+.second-step__country-add::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url('../img/svg/qty-plus-mobile.svg');
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
