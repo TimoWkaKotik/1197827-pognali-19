@@ -10,8 +10,9 @@
   position: relative;
   z-index: 10;
 }
+
 .page-main__title::after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   top: 5px;
@@ -20,6 +21,7 @@
   border-radius: 4px;
   background-color: #ff8d30;
 }
+
 .page-main__title--form::after {
   min-width: 214px;
 }

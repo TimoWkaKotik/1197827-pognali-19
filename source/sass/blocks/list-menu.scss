@@ -6,6 +6,7 @@
   display: flex;
   position: relative;
 }
+
 .list-menu__link {
   display: flex;
   justify-content: center;
@@ -14,23 +15,31 @@
   min-height: 40px;
   border-radius: 50%;
 }
+
 .list-menu__link:active {
   color: rgba(#161c35, 0.3);
 }
+
 .list-menu__link--tel {
   background-color: #ff8d30;
 }
-.list-menu__link--tel:hover, .list-menu__link--tel:focus {
+
+.list-menu__link--tel:hover,
+.list-menu__link--tel:focus {
   outline: none;
   background-color: #f26926;
 }
+
 .list-menu__link--email {
   background-color: #ffbd30;
 }
-.list-menu__link--email:hover, .list-menu__link--email:focus {
+
+.list-menu__link--email:hover,
+.list-menu__link--email:focus {
   outline: none;
   background-color: #ff8d30;
 }
+
 .list-menu__link--button-authorization {
   font-size: 17px;
   font-weight: 700;
@@ -44,7 +53,9 @@
   border-radius: 20px;
   background-color: #ffd74b;
 }
-.list-menu__link--button-authorization:hover, .list-menu__link--button-authorization:focus {
+
+.list-menu__link--button-authorization:hover,
+.list-menu__link--button-authorization:focus {
   outline: none;
   background-color: #ffbd30;
 }

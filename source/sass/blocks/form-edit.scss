@@ -5,13 +5,15 @@
   min-width: 270px;
   min-height: 40px;
   border-radius: 20px;
-  background-color: #d6daed;
+  background-color: #dfe3f0;
   justify-content: center;
   margin-bottom: 27px;
 }
+
 .form-edit__photo-button::after {
   display: none;
 }
+
 .form-edit__set-tags,
 .form-edit__set-transport {
   padding: 20px 24px;
@@ -20,9 +22,11 @@
   border: 1px solid #cbced9;
   background-color: #edeff6;
 }
+
 .form-edit__set-tags {
   margin-bottom: 20px;
 }
+
 .form-edit__name {
   text-align: center;
   color: #1d2e5b;
@@ -31,6 +35,7 @@
   text-transform: uppercase;
   padding: 0 18px;
 }
+
 .form-edit__tags-text {
   outline: none;
   color: #444444;

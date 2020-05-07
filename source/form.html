@@ -40,7 +40,7 @@
         <h2 class="visually-hidden">Петя Демин</h2>
         <div class="profile__wrapper-status">
           <div class="profile__skill skill skill--form">
-            <span class="skill__level skill__level--form"><b>99</b><br></span>
+            <span class="skill__level skill__level--form"><b>80</b><br></span>
             <span class="skill__text skill__text--form">level</span>
             <svg class="skill__progress-svg" width="100" height="100">
               <circle class="skill__progress-circle" r="48" cy="50" cx="50"></circle>
@@ -307,138 +307,134 @@
             </div>
 
             <!-- tab3 -->
-            <div class="second-step__country-wrapper">
-              <button class="second-step__button-close"><span class="visually-hidden">Удалить пункт</span></button>
-              <div class="second-step__arrow-wrapper second-step__arrow-wrapper--select-country">
-                <select class="second-step__country">
-                  <option class="second-step__country-option" value="czech" selected>Выберите страну</option>
-                </select>
+            <div class="second-step__country-wrapper second-step__select-country select-country">
+              <button class="select-country__button-close select-country__button-close"><span class="visually-hidden">Удалить пункт</span></button>
+
+              <div class="select-country__arrow-wrapper">
+                <span class="select-country__text">Выберите страну</span>
+                <span class="select-country__dot"></span>
               </div>
-              <div class="second-step__flag-wrapper">
-                <span class="second-step__dot second-step__dot--select-country"></span>
-                <!-- img is appearing -->
+              <!-- modal -->
+              <div class="select-country__letter letter letter--modal">
+                <div class="letter__header-wrapper">
+                  <span class="letter__text">Выберите страну</span>
+                  <button class="letter__button-close"><span class="visually-hidden">Закрыть окно</span></button>
+                </div>
+                <span class="visually-hidden">Первая буква страны</span>
+                <div class="letter__block-wrapper">
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="a" value="letter-a" name="radio-letter" checked>
+                    <label class="letter__label" for="a">A</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="b" value="letter-b" name="radio-letter">
+                    <label class="letter__label" for="b">Б</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="v" value="letter-v" name="radio-letter">
+                    <label class="letter__label" for="v">В</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="g" value="letter-g" name="radio-letter">
+                    <label class="letter__label" for="g">Г</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="d" value="letter-d" name="radio-letter">
+                    <label class="letter__label" for="d">Д</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="e" value="letter-e" name="radio-letter">
+                    <label class="letter__label" for="e">Е</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="z" value="letter-z" name="radio-letter">
+                    <label class="letter__label" for="z">З</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="i" value="letter-i" name="radio-letter">
+                    <label class="letter__label" for="i">И</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="k" value="letter-k" name="radio-letter">
+                    <label class="letter__label" for="k">К</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="l" value="letter-l" name="radio-letter">
+                    <label class="letter__label" for="l">Л</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="m" value="letter-m" name="radio-letter">
+                    <label class="letter__label" for="m">М</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="n" value="letter-n" name="radio-letter">
+                    <label class="letter__label" for="n">Н</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="o" value="letter-o" name="radio-letter">
+                    <label class="letter__label" for="o">О</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="p" value="letter-p" name="radio-letter">
+                    <label class="letter__label" for="p">П</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="r" value="letter-r" name="radio-letter">
+                    <label class="letter__label" for="r">Р</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="s" value="letter-s" name="radio-letter">
+                    <label class="letter__label" for="s">С</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="t" value="letter-t" name="radio-letter">
+                    <label class="letter__label" for="t">Т</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="y" value="letter-y" name="radio-letter">
+                    <label class="letter__label" for="y">У</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="f" value="letter-f" name="radio-letter">
+                    <label class="letter__label" for="f">Ф</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="h" value="letter-h" name="radio-letter">
+                    <label class="letter__label" for="h">Х</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="ch" value="letter-ch" name="radio-letter">
+                    <label class="letter__label" for="ch">Ч</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="sh" value="letter-sh" name="radio-letter">
+                    <label class="letter__label" for="sh">Ш</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="uh" value="letter-uh" name="radio-letter">
+                    <label class="letter__label" for="uh">Э</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="u" value="letter-u" name="radio-letter">
+                    <label class="letter__label" for="u">Ю</label>
+                  </div>
+                  <div class="letter__wrapper">
+                    <input class="visually-hidden" type="radio" id="ya" value="letter-ya" name="radio-letter">
+                    <label class="letter__label" for="ya">Я</label>
+                  </div>
+                </div>
+                <ul class="letter__list-country">
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Афганистан</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Албания</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Алжир</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Андорра</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Аргентина</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Армения</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Австралия</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Австрия</a></li>
+                  <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Азербайджан</a></li>
+                </ul>
               </div>
-            </div>
-            <!-- modal -->
-            <div class="second-country__letter letter letter--modal">
-              <div class="letter__header-wrapper">
-                <span class="letter__text">Выберите страну</span>
-                <button class="letter__button-close"><span class="visually-hidden">Закрыть окно</span></button>
-              </div>
-              <span class="visually-hidden">Первая буква страны</span>
-              <div class="letter__block-wrapper">
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="a" value="letter-a" name="radio-letter" checked>
-                  <label class="letter__label" for="a">A</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="b" value="letter-b" name="radio-letter">
-                  <label class="letter__label" for="b">Б</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="v" value="letter-v" name="radio-letter">
-                  <label class="letter__label" for="v">В</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="g" value="letter-g" name="radio-letter">
-                  <label class="letter__label" for="g">Г</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="d" value="letter-d" name="radio-letter">
-                  <label class="letter__label" for="d">Д</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="e" value="letter-e" name="radio-letter">
-                  <label class="letter__label" for="e">Е</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="z" value="letter-z" name="radio-letter">
-                  <label class="letter__label" for="z">З</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="i" value="letter-i" name="radio-letter">
-                  <label class="letter__label" for="i">И</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="k" value="letter-k" name="radio-letter">
-                  <label class="letter__label" for="k">К</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="l" value="letter-l" name="radio-letter">
-                  <label class="letter__label" for="l">Л</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="m" value="letter-m" name="radio-letter">
-                  <label class="letter__label" for="m">М</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="n" value="letter-n" name="radio-letter">
-                  <label class="letter__label" for="n">Н</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="o" value="letter-o" name="radio-letter">
-                  <label class="letter__label" for="o">О</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="p" value="letter-p" name="radio-letter">
-                  <label class="letter__label" for="p">П</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="r" value="letter-r" name="radio-letter">
-                  <label class="letter__label" for="r">Р</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="s" value="letter-s" name="radio-letter">
-                  <label class="letter__label" for="s">С</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="t" value="letter-t" name="radio-letter">
-                  <label class="letter__label" for="t">Т</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="y" value="letter-y" name="radio-letter">
-                  <label class="letter__label" for="y">У</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="f" value="letter-f" name="radio-letter">
-                  <label class="letter__label" for="f">Ф</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="h" value="letter-h" name="radio-letter">
-                  <label class="letter__label" for="h">Х</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="ch" value="letter-ch" name="radio-letter">
-                  <label class="letter__label" for="ch">Ч</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="sh" value="letter-sh" name="radio-letter">
-                  <label class="letter__label" for="sh">Ш</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="uh" value="letter-uh" name="radio-letter">
-                  <label class="letter__label" for="uh">Э</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="u" value="letter-u" name="radio-letter">
-                  <label class="letter__label" for="u">Ю</label>
-                </div>
-                <div class="letter__wrapper">
-                  <input class="visually-hidden" type="radio" id="ya" value="letter-ya" name="radio-letter">
-                  <label class="letter__label" for="ya">Я</label>
-                </div>
-              </div>
-              <ul class="letter__list-country">
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Афганистан</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Албания</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Алжир</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Андорра</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Аргентина</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Армения</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Австралия</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Австрия</a></li>
-                <li class="letter__item"><a class="letter__link" href="https://htmlacademy.ru">Азербайджан</a></li>
-              </ul>
             </div>
 
             <button class="second-step__country-add"><span class="second-step__country-add-text">Добавить страну</span><span class="second-step__dot second-step__dot--add-country"></span></button>

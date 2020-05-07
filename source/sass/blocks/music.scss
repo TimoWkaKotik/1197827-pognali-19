@@ -3,6 +3,7 @@
   margin: 0;
   border: none;
 }
+
 .music__label {
   color: #444444;
   font-size: 15px;
@@ -11,20 +12,24 @@
   display: flex;
   align-items: center;
 }
+
 .music__label:hover,
 .music__label:focus {
   outline: none;
   color: rgba(#444444, 0.6);
 }
+
 .music__label:active {
   color: #444444;
   opacity: 0.3;
 }
+
 .music__label:last-child {
   margin-bottom: 20px;
 }
+
 .music__label::before {
-  content: '';
+  content: "";
   margin-right: 10px;
   width: 18px;
   height: 18px;
@@ -34,6 +39,7 @@
   background-size: 9px 9px;
   background-position: center;
 }
+
 .music input:checked + .music__label::before {
-  background-image: url('../img/svg/tick.svg');
+  background-image: url("../img/svg/tick.svg");
 }

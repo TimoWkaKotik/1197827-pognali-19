@@ -9,18 +9,20 @@
   z-index: 6;
   top: -28px;
 }
+
 .price::before {
-  content: '';
+  content: " ";
   display: block;
   width: 99px;
   height: 99px;
-  background-image: url('../img/rates@1x.png');
+  background-image: url("../img/rates@1x.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   top: 65px;
   right: 25px;
 }
+
 .price__title {
   color: #ff8d30;
   font-size: 24px;
@@ -32,6 +34,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .price__list-price {
   padding: 0;
   margin: 0;
@@ -39,6 +42,7 @@
   list-style: none;
   counter-reset: num;
 }
+
 .price__item {
   color: #444444;
   font-weight: 300;
@@ -48,8 +52,9 @@
   position: relative;
   box-sizing: border-box;
 }
+
 .price__item::after {
-  content: counter(num) ' ';
+  content: counter(num) " ";
   counter-increment: num;
   color: #ffffff;
   font-size: 16px;
@@ -66,12 +71,15 @@
   align-items: center;
   justify-content: center;
 }
+
 .price__item:nth-child(2)::after {
   background-color: #ffbd30;
 }
+
 .price__item:last-child::after {
   background-color: #ffd74b;
 }
+
 .price__wrapper {
   min-width: 200px;
   padding-top: 14px;
@@ -80,9 +88,11 @@
   display: flex;
   flex-direction: column;
 }
+
 .price__item:first-child .price__wrapper {
   border-top: 1px solid rgba(#000000, 0.05);
 }
+
 .price__link {
   color: #192144;
   font-weight: 700;

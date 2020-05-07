@@ -8,6 +8,7 @@
   z-index: 9;
   top: -20px;
 }
+
 .country-filter__wrapper {
   padding: 0 25px;
   border-radius: 0 0 20px 20px;
@@ -27,6 +28,7 @@
   // display: none;
   // ВЫКЛЮЧАЛКА ФИЛЬТРА СТРАН
 }
+
 .country-filter__title {
   color: #192144;
   font-size: 16px;
@@ -35,19 +37,22 @@
   padding: 0;
   margin: 0;
 }
+
 .country-filter__wrapper::before {
-  content: '';
+  content: "";
   display: flex;
   width: 15px;
   height: 10px;
-  background-image: url('../img/svg/filter.svg');
+  background-image: url("../img/svg/filter.svg");
   background-repeat: no-repeat;
   margin-top: 2px;
   margin-right: 12px;
 }
+
 .country-filter__button-close {
   margin-left: auto;
 }
+
 .country-filter__button-hide {
   min-width: 270px;
   min-height: 40px;
@@ -57,10 +62,11 @@
   flex-direction: row-reverse;
   justify-content: center;
 }
+
 .country-filter__button-hide::after {
   width: 12px;
   height: 12px;
   margin: 0;
   margin-right: 12px;
-  background-image: url('../img/svg/filter-close.svg');
+  background-image: url("../img/svg/filter-close.svg");
 }

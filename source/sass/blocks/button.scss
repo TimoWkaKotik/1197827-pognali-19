@@ -14,11 +14,12 @@
   display: flex;
   align-items: center;
 }
+
 .button::after {
-  content: '';
+  content: "";
   min-width: 10px;
   min-height: 14px;
   margin-left: auto;
-  background-image: url('../img/svg/triangle-arrow-right.svg');
+  background-image: url("../img/svg/triangle-arrow-right.svg");
   background-repeat: no-repeat;
 }

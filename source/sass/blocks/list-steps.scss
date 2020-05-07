@@ -7,8 +7,9 @@
   position: relative;
   z-index: 1;
 }
+
 .list-steps::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 70px;
   right: -25px;
@@ -17,6 +18,7 @@
   min-width: 100vw;
   z-index: -1;
 }
+
 .list-steps__item {
   font-size: 18px;
   font-weight: 700;
@@ -30,24 +32,29 @@
   min-height: 90px;
   border-radius: 10px;
 }
+
 .list-steps__item:first-child {
   background-color: #ff8d30;
 }
+
 .list-steps__item:nth-child(2) {
   background-color: #ffa530;
   bottom: 16px;
 }
+
 .list-steps__item:nth-child(3) {
   background-color: #ffbd30;
   bottom: 31px;
 }
+
 .list-steps__item:nth-child(4) {
   background-color: #ffd74b;
   bottom: 47px;
   min-height: 80px;
 }
+
 .list-steps__item::after {
-  content: counter(num) ' ';
+  content: counter(num) " ";
   counter-increment: num;
   color: white;
   margin-left: auto;

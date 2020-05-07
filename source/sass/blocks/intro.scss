@@ -2,11 +2,12 @@
   padding: 0 25px;
   padding-top: 55px;
   background-color: #161c35;
-  background-image: url('../img/globe-back-mobile@1x.jpg');
+  background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 440px;
   z-index: -1;
 }
+
 .intro__title {
   color: #ffffff;
   font-size: 36px;
@@ -18,14 +19,15 @@
   padding: 0;
   text-align: center;
 }
+
 .intro__title::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   min-height: 255px;
   min-width: 192px;
   right: 24px;
   top: 127px;
-  background-image: url('../img/traveller-illustration-mobile@1x.png');
+  background-image: url("../img/traveller-illustration-mobile@1x.png");
   background-repeat: no-repeat;
 }

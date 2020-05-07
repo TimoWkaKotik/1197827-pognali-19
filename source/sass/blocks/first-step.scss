@@ -8,6 +8,7 @@
   background-color: #ffffff;
   position: relative;
 }
+
 .first-step__label {
   color: #1d2e5b;
   font-weight: 500;
@@ -15,11 +16,13 @@
   display: flex;
   margin-bottom: 9px;
 }
+
 .first-step__unit-name {
   opacity: 0.3;
   color: #1d2e5b;
   margin-left: auto;
 }
+
 .first-step__field-wrapper {
   padding: 15px 14px;
   box-sizing: border-box;
@@ -30,6 +33,7 @@
   justify-content: center;
   margin-bottom: 21px;
 }
+
 .first-step__aria-label {
   margin: 0;
   padding: 0;
@@ -40,21 +44,24 @@
   align-items: center;
   justify-content: center;
 }
+
 .first-step__aria-label::before {
-  content: '';
+  content: "";
   display: block;
   width: 14px;
   height: 2px;
   background-color: #cfd0d0;
 }
+
 .first-step__aria-label--plus::after {
-  content: '';
+  content: "";
   display: block;
   width: 2px;
   height: 14px;
   background-color: #cfd0d0;
   position: absolute;
 }
+
 .first-step__output {
   color: #1d2e5b;
   font-family: inherit;
@@ -67,17 +74,18 @@
   text-align: center;
   display: block;
 }
+
 .first-step__label-children {
   color: #444444;
-  font-family: "Blogger Sans";
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 27px;
   display: flex;
   align-items: center;
 }
+
 .first-step__label-children::before {
-  content: '';
+  content: "";
   margin-right: 13px;
   width: 26px;
   height: 26px;
@@ -88,6 +96,7 @@
   background-size: 9px 9px;
   background-position: center;
 }
+
 .first-step input:checked + .first-step__label-children::before {
-  background-image: url('../img/svg/tick.svg');
+  background-image: url("../img/svg/tick.svg");
 }

@@ -8,13 +8,15 @@
   background-color: #ffffff;
   position: relative;
 }
+
 .third-step__label-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 14px;
 }
+
 .third-step__label-wrapper--line::before {
-  content: '';
+  content: "";
   width: 2px;
   height: 293px;
   background-color: #1d2e5b;
@@ -23,6 +25,7 @@
   top: 190px;
   border-radius: 1px;
 }
+
 .third-step__label {
   color: #1d2e5b;
   font-size: 18px;
@@ -31,16 +34,18 @@
   display: flex;
   align-items: center;
 }
+
 .third-step__label::before {
-  content: '';
+  content: "";
   width: 6px;
   height: 6px;
   margin-right: 8px;
   background-color: #1d2e5b;
   border-radius: 50%;
 }
+
 .third-step__label::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 2px;
   border-radius: 1px;
@@ -48,11 +53,13 @@
   position: absolute;
   left: -12px;
 }
+
 .third-step__flag {
   position: relative;
   margin-left: auto;
-  box-shadow: -39px 0px 4px 0px #ffffff;
+  box-shadow: -39px 0 4px 0 #ffffff;
 }
+
 .third-step__text-plan {
   padding: 13px 15px;
   padding-right: 21px;
@@ -68,50 +75,63 @@
   min-height: 220px;
   width: 100%;
 }
+
 .third-step__text-plan--last {
   margin: 0;
 }
+
 .third-step__text-plan::-webkit-input-placeholder {
   font-size: 16px;
   font-family: inherit;
   color: rgba(#444444, 0.3);
 }
+
 .third-step__text-plan::-moz-placeholder {
   font-size: 16px;
   font-family: inherit;
   color: rgba(#444444, 0.3);
 }
+
 .third-step__text-plan:-moz-placeholder {
   font-size: 16px;
   font-family: inherit;
   color: rgba(#444444, 0.3);
 }
+
 .third-step__text-plan:-ms-input-placeholder {
   font-size: 16px;
   font-family: inherit;
   color: rgba(#444444, 0.3);
 }
+
 // .third-step__text-plan:hover::-webkit-input-placeholder {
 
 // }
+
 // .third-step__text-plan:hover::-moz-placeholder {
 
 // }
+
 // .third-step__text-plan:hover:-moz-placeholder {
 
 // }
+
 // .third-step__text-plan:hover:-ms-input-placeholder {
 
 // }
+
 // .third-step__text-plan:focus::-webkit-input-placeholder {
 
 // }
+
 // .third-step__text-plan:focus::-moz-placeholder {
 
 // }
+
 // .third-step__text-plan:focus:-moz-placeholder {
 
 // }
+
 // .third-step__text-plan:focus:-ms-input-placeholder {
 
 // }
