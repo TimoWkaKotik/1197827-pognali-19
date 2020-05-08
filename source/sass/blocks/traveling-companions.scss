@@ -1,0 +1,59 @@
+.traveling-companions {
+  padding: 0 25px;
+  padding-top: 101px;
+  padding-bottom: 30px;
+  margin: 0;
+  margin-top: -28px;
+  min-height: 1229px;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 7;
+}
+
+.traveling-companions::before {
+  content: "";
+  min-width: 143px;
+  min-height: 143px;
+  background-image: url("../img/persons/smolov-back-desktop@1x.png");
+  position: absolute;
+  z-index: -2;
+  top: 70px;
+  right: 0;
+}
+
+.traveling-companions::after {
+  content: "";
+  min-width: 132px;
+  min-height: 132px;
+  background-color: #141b3b;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -2;
+  top: 70px;
+  left: -20px;
+}
+
+.traveling-companions__title {
+  color: #ff8d30;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  position: relative;
+}
+
+.traveling-companions__description {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.traveling-companions__description--bold {
+  font-weight: 700;
+  margin-bottom: 60px;
+}

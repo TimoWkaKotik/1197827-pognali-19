@@ -1,0 +1,25 @@
+.button {
+  text-align: left;
+  color: #1d2e5b;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffd74b;
+  padding: 0 24px;
+  margin: 0;
+  min-width: 270px;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.button::after {
+  content: "";
+  min-width: 10px;
+  min-height: 14px;
+  margin-left: auto;
+  background-image: url("../img/svg/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+}

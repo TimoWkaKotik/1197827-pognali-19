@@ -1,0 +1,99 @@
+.price {
+  padding: 0 25px;
+  padding-left: 50px;
+  padding-top: 78px;
+  padding-bottom: 38px;
+  background-color: #edeff6;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 6;
+  top: -28px;
+}
+
+.price::before {
+  content: " ";
+  display: block;
+  width: 99px;
+  height: 99px;
+  background-image: url("../img/rates@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 65px;
+  right: 25px;
+}
+
+.price__title {
+  color: #ff8d30;
+  font-size: 24px;
+  font-weight: 700;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 44px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price__list-price {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 31px;
+  list-style: none;
+  counter-reset: num;
+}
+
+.price__item {
+  color: #444444;
+  font-weight: 300;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.price__item::after {
+  content: counter(num) " ";
+  counter-increment: num;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffa530;
+  min-width: 34px;
+  min-height: 34px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding-top: 5px;
+  margin-top: 3px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price__item:nth-child(2)::after {
+  background-color: #ffbd30;
+}
+
+.price__item:last-child::after {
+  background-color: #ffd74b;
+}
+
+.price__wrapper {
+  min-width: 200px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(#000000, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.price__item:first-child .price__wrapper {
+  border-top: 1px solid rgba(#000000, 0.05);
+}
+
+.price__link {
+  color: #192144;
+  font-weight: 700;
+}
