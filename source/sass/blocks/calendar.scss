@@ -1,0 +1,110 @@
+.calendar__wrapper {
+  padding: 10px 0;
+  padding-top: 12px;
+  box-sizing: border-box;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 21px;
+}
+
+.calendar__aria-label {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar__aria-label::before {
+  content: "";
+  width: 9px;
+  height: 18px;
+  background-image: url("../img/svg/month-arrow-left.svg");
+  opacity: 0.3;
+}
+
+.calendar__aria-label--next::before {
+  transform: rotate(180deg);
+}
+
+.calendar__output {
+  font-family: inherit;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+// calendar
+.calendar__list-day-week {
+  padding: 0 12px;
+  margin: 0;
+  margin-bottom: 11px;
+  list-style: none;
+  display: flex;
+}
+
+.calendar__item {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 24px;
+}
+
+.calendar__item--day-off {
+  color: #ff5c23;
+}
+
+.calendar__item:last-child {
+  margin: 0;
+}
+
+.calendar__date-wrapper {
+  margin-bottom: 23px;
+  margin-left: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar__label {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 31px;
+  height: 31px;
+  background-color: #edeff6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cbced9;
+  margin: -1px -1px 0 0;
+}
+
+.calendar__label--date-in {
+  border: 2px solid #ff5c23;
+  border-radius: 1px;
+  position: relative;
+  z-index: 1000;
+}
+
+.calendar__date-wrapper input:disabled + .calendar__label {
+  color: rgba(#444444, 0.3);
+  background-color: #ffffff;
+}
+
+.calendar__date-wrapper input:checked + .calendar__label {
+  color: #ffffff;
+  background-color: #1d2e5b;
+}

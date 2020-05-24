@@ -1,0 +1,103 @@
+.letter {
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  border: none;
+}
+
+.letter__label {
+  color: #444444;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 0;
+  width: 45px;
+  height: 42px;
+  border-right: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cbced9;
+  margin: -1px -1px 0 0;
+}
+
+.letter__wrapper input:checked + .letter__label {
+  background-color: #1d2e5b;
+  color: #ffffff;
+}
+
+.letter--modal .letter__wrapper input:checked + .letter__label {
+  background-color: #edeff6;
+  color: #1d2e5b;
+}
+
+.letter--modal {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  // ВЫКЛЮЧАЛКА
+  // display: none;
+  // ВЫКЛЮЧАЛКА
+  width: 221px;
+  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+  border-radius: 10px 10px 10px 10px;
+  background-color: #ffffff;
+}
+
+.letter__header-wrapper {
+  padding-left: 13px;
+  padding-right: 17px;
+  height: 42px;
+  border-radius: 4px 4px 0 0;
+  background-color: #1d2e5b;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.letter__text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.letter__button-close {
+  margin-left: auto;
+}
+
+.letter__block-wrapper {
+  width: 225px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.letter__list-country {
+  padding: 0 20px;
+  padding-bottom: 19px;
+  margin: 0;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.letter__item {
+  margin-bottom: 10px;
+}
+
+.letter__item:last-child {
+  margin: 0;
+}
+
+.letter__link {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+}

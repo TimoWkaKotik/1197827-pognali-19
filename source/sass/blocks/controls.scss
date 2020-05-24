@@ -1,0 +1,50 @@
+.controls {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+}
+
+.controls::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 16px;
+  height: 11px;
+  background-color: #cbced9;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  position: absolute;
+  top: 12px;
+  left: 103px;
+}
+
+.controls__level-field {
+  color: #1d2e5b;
+  font-size: 15px;
+  font-weight: 500;
+  width: 111px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.controls__level-field--min {
+  border-radius: 4px 0 0 4px;
+}
+
+.controls__level-field--max {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+
+.controls__level-field:hover,
+.controls__level-field:focus {
+  outline: none;
+  border: 1px solid #959bb2;
+}
+
+.controls__level-field:active {
+  border: 1px solid #161c35;
+}

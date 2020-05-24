@@ -1,0 +1,24 @@
+.continent {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.continent__label {
+  color: #192144;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.continent input:not(:checked) + .continent__label {
+  opacity: 0.3;
+}
+
+.continent input:checked + .continent__label {
+  opacity: 1;
+}

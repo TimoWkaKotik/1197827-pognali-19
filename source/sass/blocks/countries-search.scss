@@ -1,0 +1,19 @@
+.countries-search {
+  padding: 0;
+  padding-left: 25px;
+  margin: 0;
+  list-style: none;
+}
+
+.countries-search__item {
+  margin-bottom: 10px;
+}
+
+.countries-search__item:last-child {
+  margin: 0;
+}
+
+.countries-search__link {
+  color: #444444;
+  font-weight: 400;
+}
