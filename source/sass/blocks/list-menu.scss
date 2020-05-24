@@ -59,3 +59,9 @@
   outline: none;
   background-color: #ffbd30;
 }
+
+@media (min-width: $tablet-width) {
+  .list-menu {
+    display: none;
+  }
+}

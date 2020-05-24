@@ -56,3 +56,42 @@
 .about-us__description--bold {
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 0 40px;
+    padding-top: 334px;
+    padding-left: 75px;
+  }
+
+  .about-us::before {
+    background-image: url("../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 376px;
+    height: 548px;
+    top: 341px;
+  }
+
+  .about-us::after {
+    content: "";
+    min-width: 721px;
+    height: 213px;
+    background-color: #141b3b;
+    top: 292px;
+    left: 40px;
+  }
+
+  .about-us__title {
+    font-size: 45px;
+  }
+
+  .about-us__description {
+    font-size: 28px;
+    width: 298px;
+  }
+  .about-us__description--bold {
+    font-size: 21px;
+    width: 255px;
+  }
+}

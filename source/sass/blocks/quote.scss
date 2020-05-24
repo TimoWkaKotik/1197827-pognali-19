@@ -18,3 +18,19 @@
   font-style: normal;
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .quote {
+    padding-left: 64px;
+  }
+
+  .quote__text {
+    font-size: 28px;
+  }
+
+  .quote__author {
+    font-size: 21px;
+  }
+
+
+}
