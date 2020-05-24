@@ -1,0 +1,61 @@
+.intro {
+  padding: 0 25px;
+  padding-top: 55px;
+  background-color: #161c35;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 440px;
+  z-index: -1;
+}
+
+.intro__title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  min-width: 234px;
+  margin: 0 auto;
+  margin-bottom: 247px;
+  padding: 0;
+  text-align: center;
+}
+
+.intro__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  min-height: 255px;
+  min-width: 192px;
+  right: 24px;
+  top: 127px;
+  background-image: url("../img/traveller-illustration-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    height: 818px;
+    background-color: #182044;
+    padding: 0 40px;
+    padding-top: 80px;
+    margin-top: -1px;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: 304px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    width: 397px;
+    margin-bottom: 96px;
+  }
+
+  .intro__title::after {
+    width: 372px;
+    height: 451px;
+    background-image: url("../img/traveller-illustration-tablet@1x.png");
+    top: 228px;
+  }
+
+}

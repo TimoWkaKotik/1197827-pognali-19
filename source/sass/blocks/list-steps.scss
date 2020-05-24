@@ -1,0 +1,114 @@
+.list-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #161c35;
+  counter-reset: num;
+  position: relative;
+  z-index: 1;
+}
+
+.list-steps::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  right: -25px;
+  background-color: #192144;
+  min-height: 280px;
+  min-width: 100vw;
+  z-index: -1;
+}
+
+.list-steps__item {
+  font-size: 18px;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding-top: 23px;
+  padding-right: 21px;
+  padding-left: 25px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  min-height: 90px;
+  border-radius: 10px;
+}
+
+.list-steps__item:first-child {
+  background-color: #ff8d30;
+}
+
+.list-steps__item:nth-child(2) {
+  background-color: #ffa530;
+  bottom: 16px;
+}
+
+.list-steps__item:nth-child(3) {
+  background-color: #ffbd30;
+  bottom: 31px;
+}
+
+.list-steps__item:nth-child(4) {
+  background-color: #ffd74b;
+  bottom: 47px;
+  min-height: 80px;
+}
+
+.list-steps__item::after {
+  content: counter(num) " ";
+  counter-increment: num;
+  color: white;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .list-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 198px;
+    left: 20px;
+    z-index: 100;
+  }
+
+  .list-steps::after {
+    display: none;
+  }
+
+  .list-steps__item {
+    padding: 0 34px;
+    padding-top: 31px;
+    font-size: 24px;
+    box-sizing: border-box;
+    width: 344px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    border-radius: 0;
+    position: relative;
+  }
+
+  .list-steps__item::after {
+    display: block;
+    margin: 0;
+    margin-top: 11px;
+    font-size: 30px;
+  }
+
+  .list-steps__item:first-child,
+  .list-steps__item:nth-child(2) {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .list-steps__item:nth-child(3),
+  .list-steps__item:nth-child(4) {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .list-steps__item:nth-child(2),
+  .list-steps__item:nth-child(4) {
+    right: 35px;
+  }
+
+}
