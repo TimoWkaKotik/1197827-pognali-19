@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
 }
 
 .list-countries__item {
@@ -29,13 +30,6 @@
   z-index: 1;
 }
 
-.list-countries__wrapper--gradient {
-  // background: rgb(237, 239, 246);
-  // background: -moz-linear-gradient(360deg, rgba(237, 239, 246, 1) 50%, rgba(255, 255, 255, 1) 100%);
-  // background: -webkit-linear-gradient(360deg, rgba(237, 239, 246, 1) 50%, rgba(255, 255, 255, 1) 100%);
-  background: linear-gradient(360deg, rgba(237, 239, 246, 1) 50%, rgba(255, 255, 255, 1) 100%);
-}
-
 .list-countries__flag-img {
   margin-top: -12px;
   margin-bottom: 16px;
@@ -48,6 +42,12 @@
 }
 
 .list-countries__name {
+  padding: 0;
+  margin: 0;
+}
+
+.list-countries__slogan {
+  opacity: 0.3;
   padding: 0;
   margin: 0;
 }
@@ -70,8 +70,94 @@
   min-height: 11px;
 }
 
-.list-countries__slogan {
-  opacity: 0.3;
-  padding: 0;
-  margin: 0;
+@media (min-width: $tablet-width) {
+  .list-countries::before {
+    content: "";
+    width: 141px;
+    height: 141px;
+    border-radius: 20px;
+    background-color: #e2e5f2;
+    position: absolute;
+    top: -39px;
+    left: -35px;
+  }
+
+  .list-countries__item {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    height: 140px;
+  }
+
+  .list-countries__img {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .list-countries__wrapper {
+    padding: 0 30px;
+    padding-top: 30px;
+    margin-top: 0;
+    width: 618px;
+    height: 140px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-countries__flag-img {
+    margin: 0;
+    width: 70px;
+    height: 48px;
+    position: absolute;
+    right: -36px;
+    top: 16px;
+  }
+
+  .list-countries__name {
+    font-size: 24px;
+  }
+
+  .list-countries__slogan {
+    font-size: 20px;
+  }
+
+  .list-countries__number {
+    font-size: 20px;
+    position: absolute;
+    bottom: 17px;
+  }
+
+  .list-countries__number::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list-countries {
+    flex-grow: 1;
+  }
+
+  .list-countries::before {
+    top: -72px;
+    left: -71px;
+  }
+
+  .list-countries__item {
+    width: 559px;
+    height: 140px;
+  }
+
+  .list-countries__wrapper {
+    padding-top: 23px;
+  }
+
+  .list-countries__flag-img {
+    right: -35px;
+    top: 23px;
+  }
 }

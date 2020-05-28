@@ -48,14 +48,46 @@
   .intro__title {
     font-size: 60px;
     width: 397px;
-    margin-bottom: 96px;
+    margin-bottom: 93px;
   }
 
   .intro__title::after {
     width: 372px;
     height: 451px;
     background-image: url("../img/traveller-illustration-tablet@1x.png");
-    top: 228px;
+    top: 231px;
+    right: -73px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    height: 536px;
+    background-color: #161c34;
+    border-radius: 0 0 60px 60px;
+    padding: 0 60px;
+    padding-top: 111px;
+    margin-top: -1px;
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-position-y: -103px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 99999;
   }
 
+  .intro__title {
+    margin: 0;
+    margin-left: 66px;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .intro__title::after {
+    width: 431px;
+    height: 640px;
+    background-image: url("../img/traveller-illustration-desktop@1x.png");
+    top: -104px;
+    right: -512px;
+  }
 }

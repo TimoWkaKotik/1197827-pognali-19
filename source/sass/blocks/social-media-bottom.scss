@@ -49,3 +49,30 @@
   background-color: #ffbd30;
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .social-media-bottom {
+    flex-direction: row;
+  }
+
+  .social-media-bottom__link {
+    width: 60px;
+    height: 60px;
+    background-color: #ffd74b;
+  }
+
+  .social-media-bottom__link--facebook::before {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social-media-bottom__link--vkontakte::before {
+    width: 31px;
+    height: 16px;
+  }
+
+  .social-media-bottom__link--instagram::before {
+    width: 24px;
+    height: 24px;
+  }
+}

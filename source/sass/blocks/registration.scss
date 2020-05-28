@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.registration__description br {
+  display: none;
+}
+
 .registration__link {
   color: #ffd74b;
   text-decoration: underline;
@@ -49,4 +53,68 @@
   min-height: 45px;
   text-transform: uppercase;
   display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .registration {
+    padding: 0 76px;
+    padding-top: 132px;
+    padding-bottom: 62px;
+    top: -86px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .registration__title {
+    font-size: 45px;
+    margin-bottom: 56px;
+  }
+
+  .registration__description {
+    font-size: 28px;
+    width: 610px;
+    text-align: center;
+    margin-bottom: 66px;
+  }
+
+  .registration__description br {
+    display: inline-block;
+  }
+
+  .registration__text {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  .registration__link-contact {
+    font-size: 28px;
+  }
+
+  .registration__link-contact--phone {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .registration {
+    padding: 0 131px;
+    padding-top: 163px;
+    padding-bottom: 95px;
+  }
+
+  .registration__description {
+    width: auto;
+    margin-bottom: 60px;
+  }
+
+  .registration__text {
+    margin-bottom: 75px;
+  }
+
+  .registration__contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 868px;
+    margin: 0 auto;
+  }
 }

@@ -22,3 +22,72 @@
   border: 3px solid #192144;
   background-color: transparent;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    padding: 0 75px;
+    padding-top: 126px;
+    padding-bottom: 84px;
+    top: -143px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .map__adress {
+    font-size: 28px;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 59px;
+
+  }
+
+  .map__adress::before {
+    content: "";
+    width: 68px;
+    height: 68px;
+    background-color: #121936;
+    background-image: url("../img/svg/contacts-location.svg");
+    background-position: center;
+    background-size: 21px 32px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -22px;
+  }
+
+  .map__button {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    padding: 60px;
+    padding-top: 116px;
+    padding-bottom: 25px;
+    display: flex;
+  }
+
+  .map__adress {
+    width: 430px;
+    margin-top: 26px;
+    margin-left: 345px;
+  }
+
+  .map__adress::before {
+    height: 90px;
+    width: 90px;
+    background-size: 28px 43px;
+    left: -122px;
+    top: -31px;
+  }
+
+  .map__button {
+    width: 324px;
+    margin-left: auto;
+    margin-right: 74px;
+  }
+}

@@ -31,3 +31,10 @@
   opacity: 1;
   fill: #1d2e5b;
 }
+
+@media (min-width: $tablet-width) {
+  .list-transport {
+    margin-top: 27px;
+    margin-right: -13px;
+  }
+}

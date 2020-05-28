@@ -26,6 +26,10 @@
 
 @media (min-width: $tablet-width) {
   .button {
+    padding: 0 33px;
+    padding-right: 36px;
+    height: 81px;
     font-size: 24px;
+    border-radius: 20px;
   }
 }

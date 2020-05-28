@@ -63,9 +63,10 @@
 @media (min-width: $tablet-width) {
   .about-us {
     padding: 0 40px;
-    padding-top: 334px;
+    padding-top: 280px;
     padding-bottom: 88px;
     padding-left: 75px;
+    border-radius: 0 0 60px 60px;
   }
 
   .about-us::before {
@@ -74,38 +75,79 @@
     background-size: cover;
     width: 376px;
     height: 548px;
-    top: 340px;
+    top: 288px;
+    right: 9px;
   }
 
   .about-us::after {
     content: "";
-    min-width: 673px;
+    min-width: 688px;
     height: 213px;
     background-color: #141b3b;
-    top: 292px;
+    top: 240px;
     left: 40px;
   }
 
   .about-us__title {
     font-size: 45px;
-    margin-bottom: 43px;
+    margin-bottom: 39px;
   }
 
   .about-us__description {
     font-size: 28px;
-    width: 298px;
-    margin-bottom: 38px;
+    line-height: 33px;
+    width: 300px;
+    margin-bottom: 30px;
   }
 
   .about-us__description--bold {
     font-size: 21px;
-    width: 255px;
+    width: 256px;
+    line-height: 25px;
   }
 
   .about-us__link {
     display: flex;
     width: 274px;
     box-sizing: border-box;
-    margin-top: 53px;
+    margin-top: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    top: -56px;
+    padding: 0 0px;
+    padding-top: 186px;
+    padding-bottom: 163px;
+    padding-left: 131px;
+  }
+
+  .about-us::before {
+    background-image: url("../img/about-desktop@1x.png");
+    width: 630px;
+    height: 665px;
+    top: 141px;
+    right: 60px;
+  }
+
+  .about-us::after {
+    min-width: 213px;
+    height: 213px;
+    top: 127px;
+    left: 60px;
+  }
+
+  .about-us__title {
+    margin-bottom: 56px;
+  }
+
+  .about-us__description {
+    width: 613px;
+    margin-bottom: 38px;
+  }
+  .about-us__description--bold {
+    width: 470px;
+    margin-bottom: 84px;
   }
 }

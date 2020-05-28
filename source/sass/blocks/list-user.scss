@@ -22,3 +22,22 @@
   border-radius: 25px;
   background-color: #ffd74b;
 }
+
+@media (min-width: $tablet-width) {
+  .list-user {
+    margin-left: 148px;
+  }
+
+  .list-user__link {
+    font-size: 28px;
+  }
+
+  .list-user__link--button-authorization {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .list-user {
+    display: none;
+  }
+}

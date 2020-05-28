@@ -17,3 +17,26 @@
   top: -71px;
   z-index: 13;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 0 40px;
+    border-radius: 60px 60px 0 0;
+  }
+
+  .page-footer__wrapper {
+    padding-top: 48px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0 60px;
+  }
+
+  .page-footer__wrapper {
+
+  }
+}

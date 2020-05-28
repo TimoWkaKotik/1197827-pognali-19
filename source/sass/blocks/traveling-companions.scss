@@ -4,7 +4,6 @@
   padding-bottom: 30px;
   margin: 0;
   margin-top: -28px;
-  min-height: 1229px;
   background-color: #192144;
   border-radius: 0 0 30px 30px;
   position: relative;
@@ -13,9 +12,10 @@
 
 .traveling-companions::before {
   content: "";
-  min-width: 143px;
-  min-height: 143px;
+  width: 143px;
+  height: 143px;
   background-image: url("../img/persons/smolov-back-desktop@1x.png");
+  background-repeat: no-repeat;
   position: absolute;
   z-index: -2;
   top: 70px;
@@ -24,8 +24,8 @@
 
 .traveling-companions::after {
   content: "";
-  min-width: 132px;
-  min-height: 132px;
+  width: 132px;
+  height: 132px;
   background-color: #141b3b;
   border-radius: 20px;
   position: absolute;
@@ -56,4 +56,106 @@
 .traveling-companions__description--bold {
   font-weight: 700;
   margin-bottom: 60px;
+}
+
+.traveling-companions__button {
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .traveling-companions {
+    padding: 0 75px;
+    padding-top: 200px;
+    margin-top: -60px;
+    padding-bottom: 88px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .traveling-companions::before {
+    right: 0;
+    top: 486px;
+    left: 40px;
+  }
+
+  .traveling-companions::after {
+    width: 213px;
+    height: 213px;
+    top: 140px;
+    left: 40px;
+  }
+
+  .traveling-companions__title {
+    font-size: 45px;
+    margin-bottom: 54px;
+    position: relative;
+  }
+
+  .traveling-companions__title::before {
+    content: "";
+    width: 285px;
+    height: 285px;
+    background-image: url("../img/persons/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+    top: -60px;
+    right: 0;
+  }
+
+  .traveling-companions__description {
+    font-size: 28px;
+    line-height: 33px;
+    width: 430px;
+    margin-bottom: 39px;
+  }
+
+  .traveling-companions__description--bold {
+    font-size: 21px;
+    line-height: 25px;
+    width: 258px;
+    margin-bottom: 58px;
+  }
+
+  .traveling-companions__button {
+    width: 549px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .traveling-companions {
+    padding-left: 131px;
+    padding-right: 60px;
+    padding-top: 188px;
+    padding-bottom: 104px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .traveling-companions::before {
+    top: 193px;
+    left: 547px;
+  }
+
+  .traveling-companions::after {
+    top: 128px;
+    left: 60px;
+
+  }
+
+  .traveling-companions__title {
+    margin-left: -2px
+  }
+
+  .traveling-companions__title::before {
+    top: 257px;
+    right: 85px;
+  }
+
+  .traveling-companions__button {
+    width: 280px;
+    position: absolute;
+    bottom: 134px;
+  }
 }

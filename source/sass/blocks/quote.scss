@@ -21,14 +21,23 @@
 
 @media (min-width: $tablet-width) {
   .quote {
-    padding-left: 64px;
+    padding-left: 34px;
   }
 
   .quote__text {
     font-size: 28px;
+    margin-bottom: 47px;
   }
 
   .quote__author {
     font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .quote {
+    padding: 0;
+    margin-right: 26px;
+    margin-top: 9px;
   }
 }

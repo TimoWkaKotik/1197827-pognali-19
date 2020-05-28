@@ -29,3 +29,27 @@
   background-repeat: no-repeat;
   background-image: url("../img/svg/htmlacademy.svg");
 }
+
+@media (width: $tablet-width) {
+  .htmlacademy__link {
+    font-size: 20px;
+    width: auto;
+    border: none;
+  }
+
+  .htmlacademy__link::after  {
+    margin: 0;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .htmlacademy__link {
+    border: none;
+    width: 153px;
+  }
+
+  .htmlacademy__link::after {
+    margin-left: 25px;
+  }
+}

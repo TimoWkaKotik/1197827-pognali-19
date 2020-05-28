@@ -69,3 +69,10 @@
   stroke-width: 3px;
   stroke: #fd8c30;
 }
+
+@media (min-width: $tablet-width) {
+  .skill {
+    top: 24px;
+    left: 21px;
+  }
+}

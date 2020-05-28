@@ -25,3 +25,23 @@
 .page-main__title--form::after {
   min-width: 214px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+
+  }
+
+  .page-main__title {
+    top: -1px;
+    padding: 0 74px;
+    padding-top: 130px;
+    padding-bottom: 57px;
+    border-radius: 0 0 60px 60px;
+    font-size: 60px;
+  }
+
+  .page-main__title::after {
+    top: 61px;
+    width: 289px;
+  }
+}
